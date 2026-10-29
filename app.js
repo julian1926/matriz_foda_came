@@ -38,7 +38,7 @@ const initialProject = {
     maintain: [
       "Escuchando a mis socios y poniendo en práctica sus ideas.",
       "Siendo responsable.",
-      "Repartir tareas según las habilidades de cada integrante.",
+      "Mantengo el respeto tratando bien a los demás, siendo amable y aceptando sus diferencias.",
       "Estableciendo un cronograma anticipado.",
       "Escuchando al cliente y ofrecerle soluciones."
     ],
