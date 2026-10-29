@@ -30,7 +30,7 @@ const initialProject = {
       "Cambios constantes de la tecnología.",
       "Competencia.",
       "Desenfoque.",
-      "Encarecimiento de insumos.",
+      "Falta de experiencia.",
       "Estrés laboral por exceso de clientes."
     ]
   },
@@ -60,7 +60,7 @@ const initialProject = {
       "Actualizándome y aprendiendo nuevas herramientas digitales.",
       "Ofreciendo productos de calidad.",
       "Mantener claro lo que quiero y no perder el objetivo.",
-      "Diversificando proveedores.",
+      "Aprender cosas nuevas, investigar y buscar consejos para mejorar mis habilidades.",
       "Manteniendo la calma y hablarle a cada cliente con paciencia."
     ]
   }
