@@ -1,20 +1,68 @@
-const STORAGE_KEY = "foda-emprendedor-project-v1";
+const STORAGE_KEY = "foda-emprendedor-project-v2";
 
 const initialProject = {
   title: "Análisis matriz FODA–CAME desde el rol emprendedor",
-  date: "2026-10-27",
-  team: ["Ángel González", "Valentina Gutiérrez"],
+  date: "2026-10-29",
+  team: ["Julián", "Erika", "Marbin", "Cristian", "Diego"],
   foda: {
-    strengths: ["Obediente", "", "", "", ""],
-    opportunities: ["Conocimientos", "", "", "", ""],
-    weaknesses: ["Tiempo", "", "", "", ""],
-    threats: ["Mal cons.", "", "", "", ""]
+    strengths: [
+      "Trabajo en sinergia.",
+      "Liderazgo.",
+      "El respeto.",
+      "La puntualidad.",
+      "Efectiva atención al cliente."
+    ],
+    opportunities: [
+      "Herramientas digitales.",
+      "Subsidios de apoyo.",
+      "Marketing.",
+      "Comercio electrónico.",
+      "Fidelización de clientes."
+    ],
+    weaknesses: [
+      "Distracciones.",
+      "Gestión del tiempo.",
+      "Pereza.",
+      "El desorden.",
+      "Gastos innecesarios."
+    ],
+    threats: [
+      "Cambios constantes de la tecnología.",
+      "Competencia.",
+      "Desenfoque.",
+      "Encarecimiento de insumos.",
+      "Estrés laboral por exceso de clientes."
+    ]
   },
   came: {
-    maintain: ["Escuchar", "", "", "", ""],
-    exploit: ["Aplicar ideas", "", "", "", ""],
-    correct: ["Plan semanal", "T.P.B. · INV. · F.E.", "", "", ""],
-    confront: ["No esc.", "", "", "", ""]
+    maintain: [
+      "Escuchando a mis socios y poniendo en práctica sus ideas.",
+      "Siendo responsable.",
+      "Repartir tareas según las habilidades de cada integrante.",
+      "Estableciendo un cronograma anticipado.",
+      "Escuchando al cliente y ofrecerle soluciones."
+    ],
+    exploit: [
+      "Aprendiendo y realizando cursos e investigaciones.",
+      "Usar subsidios para impulsar estudios y formación.",
+      "A través de las redes sociales.",
+      "Implementando tiendas virtuales.",
+      "Realizando un excelente servicio."
+    ],
+    correct: [
+      "Enfocándome en mis objetivos y no estar perdiendo el tiempo.",
+      "Organizando mis horarios.",
+      "Implementando rutinas de disciplina diaria.",
+      "Mantener mis cosas en orden y evitar acumular desorden.",
+      "Evitar compras impulsivas y gastar solo en lo necesario."
+    ],
+    confront: [
+      "Actualizándome y aprendiendo nuevas herramientas digitales.",
+      "Ofreciendo productos de calidad.",
+      "Mantener claro lo que quiero y no perder el objetivo.",
+      "Diversificando proveedores.",
+      "Manteniendo la calma y hablarle a cada cliente con paciencia."
+    ]
   }
 };
 
@@ -40,6 +88,7 @@ function readProject() {
     const restored = {
       ...structuredClone(initialProject),
       ...parsed,
+      date: initialProject.date,
       team: Array.isArray(parsed.team) ? parsed.team : [...initialProject.team],
       foda: { ...structuredClone(initialProject.foda), ...parsed.foda },
       came: { ...structuredClone(initialProject.came), ...parsed.came }
